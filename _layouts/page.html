@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+{{ content | toc_only }}
+
+<article>
+{{ content }}
+</article>
+
+<script type="module">
+window.addEventListener("load", () => {
+  const headings = Array.from(document.querySelectorAll("h2[id], h3[id], h4[id], h5[id], h6[id]"));
+
+  const scrollHandler = (entries) => {
+    let height = window.innerHeight;
+    console.log(height)
+
+    // FIXME: logic here not quite right yet
+
+    for (let i = headings.length - 1; i >= 0; i--) {
+      let heading = headings[i];
+      let rect = heading.getBoundingClientRect();
+      
+      if (rect.top < height / 2) {
+        for (let a of document.querySelectorAll("#toc a")) {
+          a.classList.remove("visible");
+        }
+        document.querySelector(`#toc a[href="#${heading.id}"]`)
+          .classList.add("visible");
+        break;
+      }
+    }
+  }
+
+  const observer = new IntersectionObserver(scrollHandler);
+
+  for (let heading of headings) {
+    observer.observe(heading);
+  }
+});
+</script>

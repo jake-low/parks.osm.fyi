@@ -1,0 +1,58 @@
+{% assign columns = include.columns %}
+{% unless columns %}
+  {% assign columns = "name" %}
+{% endunless %}
+
+{% assign columns = columns | split: "," %}
+{% assign count = include.data | size %}
+
+{% if count > 0 %}
+
+<table>
+
+<thead>
+<tr>
+<th>OSM ID</th>
+{% for column in columns %}
+<th>{{column}}</th>
+{% endfor %}
+{% if include.links %}
+<th>links</th>
+{% endif %}
+</tr>
+</thead>
+
+<tbody>
+{% for park in include.data %}
+<tr>
+<td><a href="https://openstreetmap.org/{{ park.id }}">{{park.id}}</a></td>
+{% for column in columns %}
+  <td>{{ park[column] }}</td>
+{% endfor %}
+
+{% if include.links %}
+<td>
+{% if park.website %}<a href="{{ park.website }}">web</a>{% endif %}
+{% if park.wikipedia %}
+  {% assign lang = park.wikipedia | split: ":" | first %}
+  {% assign name = park.wikipedia | split: ":" | last %}
+  <a href="https://{{lang}}.wikipedia.org/wiki/{{ name | replace: ' ', '_' | url_encode }}">wiki</a>
+{% endif %}
+{% if park.wikidata %}
+  <a href="https://wikipedia.org/wiki/{{ park.wikidata }}">q</a>
+{% endif %}
+</td>
+{% endif %}
+
+</tr>
+{% endfor %}
+
+</tbody>
+
+</table>
+
+{% else %}
+
+<p>No data</p>
+
+{% endif %}
