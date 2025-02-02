@@ -1,0 +1,38 @@
+name: Update data from OSM
+
+on:
+  schedule:
+    - cron:  "0 12 * * *"
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install jq
+        run: apt install jq
+      - name: Install rust
+        uses: actions-rs/toolchain@v1
+      - name: Install overpass-cli
+        run: cargo install overpass-cli
+      - name: Install node
+        run: apt install nodejs npm
+      - name: Install osmtogeojson
+        run: npm install -g osmtogeojson
+      - name: Install shapely
+        run: pip install shapely
+      - name: Install just
+        run: cargo install just
+      - name: Update data
+        run: just data
+      - name: Commit and push
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'noreply@github.com'
+          git commit -am "Update data files with latest OSM data"
+          git push
