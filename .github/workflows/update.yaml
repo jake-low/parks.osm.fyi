@@ -18,6 +18,8 @@ jobs:
         run: sudo apt install -y jq
       - name: Install rust
         uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
       - name: Install overpass-cli
         run: cargo install overpass-cli
       - name: Install node
