@@ -1,4 +1,5 @@
 data: nps wilderness state_parks
+    echo "\"$(TZ=UTC date --iso-8601=seconds)\"" > _data/last_updated.json
 
 nps:
     #!/bin/sh

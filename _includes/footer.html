@@ -2,5 +2,37 @@
 <footer>
   Map data from <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>,
   licensed under <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>.
+  Data last updated
+  <time class="relative" datetime="{{ site.data.last_updated }}">{{ site.data.last_updated }}</time>.
 </footer>
 {% endif %}
+
+<script type="module">
+const units = {
+  // conversions, in milliseconds
+  day: 24 * 60 * 60 * 1000,
+  hour: 60 * 60 * 1000,
+  minute: 60 * 1000,
+  second: 1000
+}
+
+let rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' })
+
+function getRelativeTime(d1, d2) {
+  let elapsed = d1 - d2;
+
+  for (let unit in units) {
+    if (Math.abs(elapsed) > units[unit] || unit === 'second') {
+      return rtf.format(Math.round(elapsed / units[unit]), unit);
+    }
+  }
+}
+
+let now = new Date();
+
+for (let el of document.querySelectorAll("time.relative")) {
+  let dt = new Date(el.attributes.datetime.value);
+  el.innerText = getRelativeTime(dt, now);
+  el.title = dt.toString();
+}
+</script>

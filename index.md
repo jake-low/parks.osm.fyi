@@ -7,6 +7,6 @@ Welcome to [parks.osm.fyi](/). This website lists park boundaries from [OpenStre
 ## United States
 
 - [National Park Service areas](/us/nps)
-- [Wilderness areas](/us/wilderness)
+- [Wilderness Areas](/us/wilderness)
 - [State Parks](/us/state-parks)
 
