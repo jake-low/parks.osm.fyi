@@ -441,6 +441,7 @@
     "ownership": "national",
     "protect_class": "1b",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "id": "relation/1115803"
@@ -1244,6 +1245,7 @@
     "ownership": "national",
     "protect_class": "1b",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "source:file": "wilderness.net, University of Montana",
     "type": "multipolygon",
@@ -1472,6 +1474,7 @@
     "operator:wikidata": "Q308439",
     "ownership": "national",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/4270473"
@@ -1730,6 +1733,7 @@
     "operator": "National Park Service",
     "ownership": "national",
     "protect_class": "1b",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "wikidata": "Q27977456",
@@ -1746,6 +1750,7 @@
     "ownership": "national",
     "protect_class": "1b",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "wikidata": "Q27950428",
@@ -1762,6 +1767,7 @@
     "ownership": "national",
     "protect_class": "1b",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "wikidata": "Q27994981",
@@ -2263,6 +2269,7 @@
     "operator": "National Park Service",
     "ownership": "national",
     "protect_class": "1b",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "id": "relation/5978351"
@@ -2274,6 +2281,7 @@
     "operator": "National Park Service",
     "ownership": "national",
     "protect_class": "1b",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "id": "relation/5978473"
@@ -2285,6 +2293,7 @@
     "operator": "National Park Service",
     "ownership": "national",
     "protect_class": "1b",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "id": "relation/5978490"
@@ -2357,6 +2366,7 @@
     "ownership": "national",
     "protect_class": "1b",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "wikidata": "Q5182654",
@@ -2617,6 +2627,7 @@
     "ownership": "national",
     "protect_class": "1b",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "wikidata": "Q27977595",
@@ -2674,6 +2685,7 @@
     "ownership": "national",
     "protect_class": "1b",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "id": "relation/6229747"
@@ -2725,6 +2737,8 @@
     "operator:type": "public",
     "operator:wikidata": "Q308439",
     "owner": "State of Maryland",
+    "ownership": "national",
+    "protected": "perpetuity",
     "protection_title": "National Battlefield",
     "type": "multipolygon",
     "website": "https://www.nps.gov/mono/index.htm",
@@ -4793,6 +4807,7 @@
     "ownership": "national",
     "protect_class": "1b",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "start_date": "1984",
     "type": "boundary",
@@ -4825,6 +4840,7 @@
     "operator": "National Park Service",
     "ownership": "national",
     "protect_class": "1b",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "start_date": "1984",
     "type": "boundary",
@@ -5245,6 +5261,7 @@
     "operator": "National Park Service",
     "ownership": "national",
     "protect_class": "1b",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "ref:WDPA": "555586266",
     "start_date": "1988",
@@ -5275,6 +5292,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16649282"
@@ -5290,6 +5308,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16649769"
@@ -5305,6 +5324,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16649823"
@@ -5342,6 +5362,7 @@
     "name": "Kobuk Valley Wilderness",
     "operator": "National Park Service",
     "protect_class": "1a",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16691206"
@@ -5368,6 +5389,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "wikidata": "Q27977589",
@@ -5384,6 +5406,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16817223"
@@ -5399,6 +5422,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16817225"
@@ -5414,6 +5438,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "website": "https://wilderness.net/visit-wilderness/?ID=268",
@@ -5431,6 +5456,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16820310"
@@ -5443,6 +5469,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16820314"
@@ -5458,6 +5485,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16820376"
@@ -5473,6 +5501,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "wikidata": "Q27967229",
@@ -5489,6 +5518,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "wikidata": "Q3326033",
@@ -5505,6 +5535,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16844211"
@@ -5520,6 +5551,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16848399"
@@ -5535,7 +5567,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
-    "protected_area": "wilderness",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16848647"
@@ -5549,6 +5581,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16848662"
@@ -5564,6 +5597,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16848699"
@@ -5579,6 +5613,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16849460"
@@ -5594,6 +5629,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/16849990"
@@ -5685,6 +5721,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/18250443"
@@ -5698,6 +5735,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/18250444"
@@ -5713,6 +5751,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/18250445"
@@ -5726,6 +5765,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/18250446"
@@ -5742,6 +5782,7 @@
     "ownership": "national",
     "protect_class": "1a",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "multipolygon",
     "id": "relation/18250447"
@@ -5816,6 +5857,7 @@
     "operator:wikidata": "Q308439",
     "ownership": "national",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "id": "relation/18528884"
@@ -5830,6 +5872,7 @@
     "operator:wikidata": "Q308439",
     "ownership": "national",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "id": "relation/18528968"
@@ -5844,6 +5887,7 @@
     "operator:wikidata": "Q308439",
     "ownership": "national",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "type": "boundary",
     "id": "relation/18529464"
@@ -7369,6 +7413,7 @@
     "ownership": "national",
     "protect_class": "1b",
     "protected": "perpetuity",
+    "protected_area": "wilderness_preserve",
     "protection_title": "Wilderness Area",
     "source": "Purcell A. 2022. Congaree National Park Tract and Boundary Data. National Park Service (NPS), Chief Cartographer, Land Resources Division, WASO Fort Collins Land Resources Program Center. https://irma.nps.gov/DataStore/Reference/Profile/2299943",
     "source:version": "20220607",
