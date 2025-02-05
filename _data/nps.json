@@ -6904,24 +6904,6 @@
     "id": "way/315105875"
   },
   {
-    "amenity": "ranger_station",
-    "boundary": "protected_area",
-    "building": "yes",
-    "building:levels": "2",
-    "heritage": "2",
-    "heritage:operator": "nrhp",
-    "information": "yes",
-    "name": "Wildernesss Information Center",
-    "nrhp:criteria": "(C)",
-    "nrhp:inscription_date": "May 28, 1987",
-    "nrhp:nhl": "yes",
-    "operator": "National Park Service",
-    "protection_title": "protected_site",
-    "ref:nrhp": "87001338",
-    "wikidata": "Q97067309",
-    "id": "way/348459751"
-  },
-  {
     "alt_name": "West Palisades",
     "boundary": "national_park",
     "leisure": "park",
