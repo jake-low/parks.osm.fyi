@@ -6097,7 +6097,7 @@
     "id": "way/37814132"
   },
   {
-    "boundary": "national_park",
+    "boundary": "protected_area",
     "leisure": "park",
     "name": "Eugene O'Neill National Historic Site",
     "operator": "National Park Service",
@@ -6108,6 +6108,7 @@
     "owner": "United States National Park Service",
     "ownership": "national",
     "protected": "perpetuity",
+    "protection_title": "National Historic Site",
     "source": "http://science.nature.nps.gov/nrdata/index.cfm",
     "website": "https://www.nps.gov/euon/index.htm",
     "wikidata": "Q14681956",
