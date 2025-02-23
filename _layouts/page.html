@@ -2,10 +2,14 @@
 layout: base
 ---
 
+{% if page.title %}
+<h1>{{ page.title }}</h2>
+{% endif %}
+
 {{ content | toc_only }}
 
 <article>
-{{ content }}
+{{ content | inject_anchors }}
 </article>
 
 <script type="module">

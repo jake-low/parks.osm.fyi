@@ -25,7 +25,7 @@
 <tbody>
 {% for park in include.data %}
 <tr>
-<td><a href="https://openstreetmap.org/{{ park.id }}">{{park.id}}</a></td>
+<td><a href="https://openstreetmap.org/{{ park['@type'] }}/{{ park['@id'] }}">{{ park['@type'] }}/{{ park['@id'] }}</a></td>
 {% for column in columns %}
   <td>{{ park[column] }}</td>
 {% endfor %}
@@ -53,6 +53,6 @@
 
 {% else %}
 
-<p>No data</p>
+<p>No parks matching these criteria</p>
 
 {% endif %}

@@ -15,3 +15,5 @@ exclude:
   - scripts/
   - boundaries/
   - mise.toml
+  - "*.parquet"
+  - "*.osm.pbf"

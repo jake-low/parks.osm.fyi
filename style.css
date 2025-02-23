@@ -5,6 +5,8 @@ body {
   font-family: sans-serif;
   display: grid;
   grid-template-columns: [full-start left] auto [main] 1000px [right] auto [full-end];
+  column-gap: 1em;
+  padding: 0 1em;
 }
 
 main {
@@ -54,12 +56,22 @@ th + th, td + td {
   padding-inline-start: 1ch;
 }
 
+th, td {
+  max-width: 40ch; /* prevent any column from growing too wide, crunching other columns */
+}
+
+/* end experiment */
+
 header, footer {
   padding: 1em 0;
 }
 
 footer {
   grid-column: main;
+}
+
+:not(a)[title] {
+  text-decoration: underline dotted gray;
 }
 
 .logo {
@@ -78,6 +90,10 @@ footer {
   list-style: none;
   font-size: small;
   line-height: 1.4;
+}
+
+#toc ul {
+  padding-left: 1em;
 }
 
 #toc .visible {
