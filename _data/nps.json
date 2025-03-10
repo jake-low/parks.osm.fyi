@@ -6736,30 +6736,6 @@
     "id": "way/385163018"
   },
   {
-    "attribution": "Fish and Wildlife Service",
-    "boundary": "national_park",
-    "leisure": "park",
-    "operator": "National Park Service",
-    "operator:short": "NPS",
-    "operator:type": "public",
-    "operator:wikidata": "Q308439",
-    "ownership": "national",
-    "protected": "perpetuity",
-    "id": "way/398196369"
-  },
-  {
-    "attribution": "Fish and Wildlife Service",
-    "boundary": "national_park",
-    "leisure": "park",
-    "operator": "National Park Service",
-    "operator:short": "NPS",
-    "operator:type": "public",
-    "operator:wikidata": "Q308439",
-    "ownership": "national",
-    "protected": "perpetuity",
-    "id": "way/398245773"
-  },
-  {
     "addr:city": "Monroe",
     "addr:housenumber": "1403",
     "addr:postcode": "48162",
