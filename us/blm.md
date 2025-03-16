@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Bureau of Land Management areas
 ---
 
 These are all of the boundaries in OpenStreetMap that have one of the following `operator` values:

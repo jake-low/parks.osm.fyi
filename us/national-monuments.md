@@ -1,5 +1,6 @@
 ---
 layout: page
+title: National Monuments
 ---
 
 {% assign parks = "name like '% National Monument'" | duckdb | sort: "name" %}

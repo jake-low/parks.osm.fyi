@@ -1,5 +1,6 @@
 ---
 layout: page
+title: National Recreation Areas
 ---
 
 {% assign parks = "name like '% National Recreation Area'" | duckdb | sort: "name" %}

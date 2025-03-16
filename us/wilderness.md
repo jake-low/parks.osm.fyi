@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Wilderness Areas
 ---
 
 {% assign parks = "protection_title = 'Wilderness Area'" | duckdb | sort: "name" %}

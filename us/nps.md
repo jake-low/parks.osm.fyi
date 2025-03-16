@@ -1,5 +1,6 @@
 ---
 layout: page
+title: National Park Service areas
 ---
 
 {% assign parks = "operator = 'National Park Service'" | duckdb %}

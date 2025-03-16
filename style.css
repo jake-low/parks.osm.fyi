@@ -16,6 +16,18 @@ main {
   /* gap: 1em; */
 }
 
+main > * {
+  grid-column: main;
+}
+
+main > h1 {
+  margin-top: -1em;
+}
+
+a {
+  text-decoration: none;
+}
+
 code {
   font-size: 1.15em;
 }
@@ -79,23 +91,27 @@ footer {
   font-weight: bold;
 }
 
-#toc {
+nav.toc {
   position: sticky;
   top: 2em;
   height: 0;
-  margin: 0;
-  padding: 0;
 
   grid-column: left;
-  list-style: none;
   font-size: small;
   line-height: 1.4;
 }
 
-#toc ul {
+nav.toc ul {
   padding-left: 1em;
 }
 
-#toc .visible {
+nav.toc > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+nav.toc .visible {
   font-weight: bold;
 }

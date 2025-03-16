@@ -1,5 +1,6 @@
 ---
 layout: page
+title: State Parks
 ---
 
 {% assign state_parks = "name like '% State Park'" | duckdb %}
