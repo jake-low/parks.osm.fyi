@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
   display: grid;
-  grid-template-columns: [full-start left] auto [main] 1000px [right] auto [full-end];
+  grid-template-columns: [full-start left] minmax(auto, 250px) [main] 1000px [right] minmax(auto, 250px) [full-end];
   column-gap: 1em;
   padding: 0 1em;
 }
@@ -26,6 +26,10 @@ main > h1 {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 code {
