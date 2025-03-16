@@ -38,10 +38,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Download parks.parquet file
-        uses: actions/download-artifact@v4
-        with:
-          name: parks
-          github-token: ${{ secrets.PAT }}
+        run: |
+          curl https://files.jakelow.com/parks.parquet -o parks.parquet
+          curl https://files.jakelow.com/parks.timestamp -o parks.timestamp
+          echo \"$(cat parks.timestamp)\" > _data/last_updated.json
       - name: Build with Jekyll
         run: bundle exec jekyll build
         env:
