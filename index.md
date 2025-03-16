@@ -22,6 +22,6 @@ Welcome to [parks.osm.fyi](/). This website lists parks, nature reserves, and pr
 
 <ul style="column-count: 3">
 {%- for state in site.data.states %}
-<li><a href="/us/{{ state.id | lower }}">{{ state.name }}</a></li>
+<li><a href="/us/{{ state.id | downcase }}">{{ state.name }}</a></li>
 {%- endfor %}
 </ul>
