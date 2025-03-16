@@ -39,6 +39,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install DuckDB
         run: "curl https://install.duckdb.org | sh"
+      - name: Add DuckDB to $PATH
+        run: "echo '/home/runner/.duckdb/cli/latest' >> $GITHUB_PATH"
       - name: Download parks.parquet file
         run: |
           curl https://files.jakelow.com/parks.parquet -o parks.parquet
