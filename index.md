@@ -18,6 +18,7 @@ Data on this site was last updated <time class="relative" datetime="{{ site.data
 
 - [Wilderness Areas](/us/wilderness)
 - [National Monuments](/us/national-monuments)
+- [National Recreation Areas](/us/national-recreation-areas)
 - [State Parks](/us/state-parks)
 
 ### by state
