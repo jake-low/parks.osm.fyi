@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
   display: grid;
-  grid-template-columns: [full-start left] minmax(auto, 250px) [main] 1000px [right] minmax(auto, 250px) [full-end];
+  grid-template-columns: [full-start left] 1fr [main] minmax(auto, 1000px) [right] 1fr [full-end];
   column-gap: 1em;
   padding: 0 1em;
 }
