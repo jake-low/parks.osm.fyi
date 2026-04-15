@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Bureau of Land Management areas
+query: |
+    SELECT * FROM 'layercake/parks.parquet'
+    WHERE operator IN ('US Bureau of Land Management', 'Bureau of Land Management', 'BLM')
 ---
 
 These are all of the boundaries in OpenStreetMap that have one of the following `operator` values:
@@ -8,7 +11,7 @@ These are all of the boundaries in OpenStreetMap that have one of the following 
 - `Bureau of Land Management`
 - `BLM`
 
-{% assign parks = "operator in ('US Bureau of Land Management', 'Bureau of Land Management', 'BLM')" | duckdb %}
+{% assign parks = page.query | duckdb %}
 {% assign protection_titles = parks | map: "protection_title" | freq %}
 
 There are {{ parks | size }} boundaries in OSM that meet these criteria.

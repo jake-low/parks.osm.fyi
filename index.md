@@ -28,3 +28,10 @@ Data on this site was last updated <time class="relative" datetime="{{ site.data
 <li><a href="/us/{{ state.id | downcase }}">{{ state.name }}</a></li>
 {%- endfor %}
 </ul>
+
+## Canada
+
+### by kind
+
+- [National Parks](/ca/national-parks)
+- [Provincial Parks](/ca/provincial-parks)

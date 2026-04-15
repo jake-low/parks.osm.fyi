@@ -21,7 +21,26 @@ class StatePage < Jekyll::Page
     @ext      = '.md'
     @name     = @basename + @ext
 
-    out = `duckdb -c "copy(select * exclude(bbox, geometry) from 'parks.parquet' where \\"@states\\" like '%#{state["id"]}%') to stdout (format 'json')"`
+    # Use spatial join to find parks within this state
+    out = `duckdb -c "
+      LOAD spatial;
+      COPY (
+        WITH state_boundary AS (
+          SELECT geometry
+          FROM 'layercake/boundaries.parquet'
+          WHERE admin_level = '4'
+          AND \\\"ISO3166-2\\\" = 'US-#{state["id"]}'
+        ),
+        parks_in_state AS (
+          SELECT parks.*
+          FROM 'layercake/parks.parquet' AS parks
+          JOIN state_boundary ON ST_Intersects(parks.geometry, state_boundary.geometry)
+          WHERE ST_Area(ST_Intersection(parks.geometry, state_boundary.geometry)) / ST_Area(parks.geometry) > 0.25
+        )
+        SELECT *
+        FROM parks_in_state
+      ) TO stdout (FORMAT 'json')
+    "`
     parks = out.split("\n").map { |line| JSON.parse(line) }
 
     @data = {
@@ -35,7 +54,8 @@ class StatePage < Jekyll::Page
     @content = <<-EOS
 {% assign protection_titles = page.parks | map: "protection_title" | freq %}
 
-All parks in {{ page.state.name }}, grouped by their `protection_title`.
+There are {{ page.parks | size }} parks in {{ page.state.name }} mapped in OpenStreetMap.
+They are listed below, grouped by their `protection_title`.
 
 {% for protection_title in protection_titles %}
 

@@ -1,9 +1,12 @@
 ---
 layout: page
 title: National Monuments
+query: |
+  SELECT * FROM 'layercake/parks.parquet'
+  WHERE name[1] LIKE '% National Monument'
 ---
 
-{% assign parks = "name like '% National Monument'" | duckdb | sort: "name" %}
+{% assign parks = page.query | duckdb | sort: "name" %}
 
 These are all of the boundaries in OpenStreetMap whose name ends in "National Monument". There are {{ parks | size }} of them. They are grouped below by their `operator`.
 

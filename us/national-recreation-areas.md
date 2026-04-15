@@ -1,9 +1,12 @@
 ---
 layout: page
 title: National Recreation Areas
+query: |
+  SELECT * FROM 'layercake/parks.parquet'
+  WHERE name[1] LIKE '% National Recreation Area'
 ---
 
-{% assign parks = "name like '% National Recreation Area'" | duckdb | sort: "name" %}
+{% assign parks = page.query | duckdb | sort: "name" %}
 
 These are all of the boundaries in OpenStreetMap whose name ends in "National Recreation Area". There are {{ parks | size }} of them. They are grouped below by their `operator`.
 

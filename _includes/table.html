@@ -25,9 +25,14 @@
 <tbody>
 {% for park in include.data %}
 <tr>
-<td><a href="https://openstreetmap.org/{{ park['@type'] }}/{{ park['@id'] }}">{{ park['@type'] }}/{{ park['@id'] }}</a></td>
+<td><a href="https://openstreetmap.org/{{ park['type'] }}/{{ park['id'] }}">{{ park['type'] }}/{{ park['id'] }}</a></td>
 {% for column in columns %}
-  <td>{{ park[column] }}</td>
+  {% assign value = park[column] %}
+  {% if value.first %}
+    <td>{{ value | join: "; " }}</td>
+  {% else %}
+    <td>{{ value }}</td>
+  {% endif %}
 {% endfor %}
 
 {% if include.links %}
@@ -39,7 +44,7 @@
   <a href="https://{{lang}}.wikipedia.org/wiki/{{ name | replace: ' ', '_' | url_encode }}">wiki</a>
 {% endif %}
 {% if park.wikidata %}
-  <a href="https://wikipedia.org/wiki/{{ park.wikidata }}">q</a>
+  <a href="https://wikidata.org/wiki/{{ park.wikidata }}">q</a>
 {% endif %}
 </td>
 {% endif %}

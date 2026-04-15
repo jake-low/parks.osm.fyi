@@ -13,6 +13,7 @@ defaults:
 exclude:
   - scripts/
   - boundaries/
+  - layercake/
   - mise.toml
   - "*.parquet"
   - "*.osm.pbf"
